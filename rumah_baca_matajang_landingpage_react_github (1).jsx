@@ -1,0 +1,470 @@
+export default function RumahBacaMatajang() {
+  const programs = [
+    {
+      title: "Baca Bersama",
+      desc: "Kegiatan membaca rutin untuk anak dan masyarakat.",
+      image:
+        "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1200&auto=format&fit=crop",
+    },
+    {
+      title: "Diskusi Edukatif",
+      desc: "Diskusi pendidikan, self development, dan filsafat ringan.",
+      image:
+        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop",
+    },
+    {
+      title: "Kelas Kreatif",
+      desc: "Belajar desain, digital skill, dan kreativitas anak muda.",
+      image:
+        "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
+    },
+    {
+      title: "Donasi Buku",
+      desc: "Gerakan berbagi buku untuk memperluas akses literasi.",
+      image:
+        "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1200&auto=format&fit=crop",
+    },
+  ];
+
+  const gallery = [
+    "https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=1200&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1200&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1503676382389-4809596d5290?q=80&w=1200&auto=format&fit=crop",
+  ];
+
+  return (
+    <div className="bg-white text-slate-800 font-sans">
+      {/* Navbar */}
+      <header className="sticky top-0 z-50 bg-white shadow-sm border-b border-slate-100">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="shrink-0">
+              <img
+                src="logo.png"
+                alt="Logo Rumah Baca Matajang"
+                className="w-12 h-12 rounded-xl object-cover shadow-sm"
+              />
+            </div>
+            <div>
+              <h1 className="font-bold text-2xl text-blue-800 leading-none">
+                Rumah Baca
+              </h1>
+              <p className="text-orange-500 font-semibold text-sm">
+                MATAJANG
+              </p>
+            </div>
+          </div>
+
+          <nav className="hidden md:flex items-center gap-8 font-medium">
+            <a href="#" className="hover:text-orange-500 transition">
+              Beranda
+            </a>
+            <a href="#tentang" className="hover:text-orange-500 transition">
+              Tentang
+            </a>
+            <a href="#program" className="hover:text-orange-500 transition">
+              Program
+            </a>
+            <a href="#kegiatan" className="hover:text-orange-500 transition">
+              Kegiatan
+            </a>
+            <a href="#donasi" className="hover:text-orange-500 transition">
+              Donasi
+            </a>
+          </nav>
+
+          <button className="bg-blue-700 hover:bg-blue-800 transition text-white px-6 py-3 rounded-xl font-semibold shadow-lg">
+            Gabung Komunitas
+          </button>
+        </div>
+      </header>
+
+      {/* Hero */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-white to-blue-50">
+        <div className="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <p className="text-orange-500 font-semibold uppercase tracking-widest mb-4">
+              Rumah Literasi & Komunitas
+            </p>
+
+            <h2 className="text-5xl lg:text-7xl font-black leading-tight text-blue-900 mb-6">
+              Mencerahkan <br />
+              dan <span className="text-orange-500">Inklusif</span>
+            </h2>
+
+            <p className="text-slate-600 text-lg leading-relaxed mb-10 max-w-xl">
+              Rumah Baca Matajang hadir sebagai ruang belajar,
+              membaca, dan bertumbuh bersama untuk masyarakat.
+            </p>
+
+            <div className="flex flex-wrap gap-4 mb-10">
+              <button className="bg-blue-700 text-white px-8 py-4 rounded-2xl font-semibold shadow-lg hover:scale-105 transition">
+                Gabung Komunitas
+              </button>
+
+              <button className="border-2 border-orange-500 text-orange-500 px-8 py-4 rounded-2xl font-semibold hover:bg-orange-500 hover:text-white transition">
+                Donasi Buku
+              </button>
+            </div>
+
+            <div className="flex flex-wrap gap-6">
+              <div className="bg-white shadow-md rounded-2xl px-5 py-4">
+                📚 Literasi Untuk Semua
+              </div>
+              <div className="bg-white shadow-md rounded-2xl px-5 py-4">
+                🤝 Ruang Belajar Bersama
+              </div>
+              <div className="bg-white shadow-md rounded-2xl px-5 py-4">
+                🌱 Membangun Masa Depan
+              </div>
+            </div>
+          </div>
+
+          <div className="relative">
+            <div className="absolute -bottom-10 -right-10 w-72 h-72 bg-orange-500 rounded-full blur-3xl opacity-20"></div>
+
+            <img
+              src="https://images.unsplash.com/photo-1503676382389-4809596d5290?q=80&w=1200&auto=format&fit=crop"
+              alt="Hero"
+              className="rounded-[32px] shadow-2xl object-cover h-[650px] w-full"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* About */}
+      <section id="tentang" className="py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+          <img
+            src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1200&auto=format&fit=crop"
+            alt="Tentang"
+            className="rounded-[32px] shadow-xl h-[520px] object-cover"
+          />
+
+          <div>
+            <p className="text-orange-500 font-semibold mb-3 uppercase tracking-widest">
+              Tentang Kami
+            </p>
+
+            <h3 className="text-5xl font-black text-blue-900 mb-6 leading-tight">
+              Tentang Rumah Baca Matajang
+            </h3>
+
+            <p className="text-slate-600 text-lg leading-relaxed mb-10">
+              Rumah Baca Matajang adalah ruang literasi yang hadir
+              untuk menumbuhkan budaya membaca, belajar, dan berdiskusi
+              di tengah masyarakat.
+            </p>
+
+            <div className="grid sm:grid-cols-3 gap-5">
+              <div className="bg-white border border-slate-100 rounded-3xl p-6 shadow-md hover:-translate-y-2 transition">
+                <div className="w-14 h-14 rounded-2xl bg-blue-700 text-white flex items-center justify-center text-2xl mb-4">
+                  📖
+                </div>
+                <h4 className="font-bold text-lg mb-2">Literasi</h4>
+                <p className="text-slate-500 text-sm">
+                  Membangun budaya membaca sejak dini.
+                </p>
+              </div>
+
+              <div className="bg-white border border-slate-100 rounded-3xl p-6 shadow-md hover:-translate-y-2 transition">
+                <div className="w-14 h-14 rounded-2xl bg-orange-500 text-white flex items-center justify-center text-2xl mb-4">
+                  🤝
+                </div>
+                <h4 className="font-bold text-lg mb-2">Komunitas</h4>
+                <p className="text-slate-500 text-sm">
+                  Menjadi ruang tumbuh bersama.
+                </p>
+              </div>
+
+              <div className="bg-white border border-slate-100 rounded-3xl p-6 shadow-md hover:-translate-y-2 transition">
+                <div className="w-14 h-14 rounded-2xl bg-blue-900 text-white flex items-center justify-center text-2xl mb-4">
+                  🌱
+                </div>
+                <h4 className="font-bold text-lg mb-2">
+                  Pengembangan Diri
+                </h4>
+                <p className="text-slate-500 text-sm">
+                  Belajar tidak hanya di sekolah.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Program */}
+      <section id="program" className="py-28 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center max-w-3xl mx-auto mb-20">
+            <p className="text-orange-500 font-semibold uppercase tracking-widest mb-4">
+              Program Kami
+            </p>
+
+            <h3 className="text-5xl font-black text-blue-900 mb-6">
+              Program Literasi Kami
+            </h3>
+
+            <p className="text-slate-600 text-lg leading-relaxed">
+              Kegiatan yang membantu masyarakat bertumbuh melalui
+              pendidikan dan literasi.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {programs.map((item, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-[28px] overflow-hidden shadow-lg hover:-translate-y-3 transition duration-300"
+              >
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="h-56 w-full object-cover"
+                />
+
+                <div className="p-7">
+                  <h4 className="text-2xl font-bold text-blue-900 mb-3">
+                    {item.title}
+                  </h4>
+
+                  <p className="text-slate-600 leading-relaxed mb-6">
+                    {item.desc}
+                  </p>
+
+                  <button className="text-orange-500 font-semibold hover:translate-x-1 transition">
+                    Selengkapnya →
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Vision Mission */}
+      <section className="py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-8">
+          <div className="bg-blue-900 rounded-[32px] p-14 text-white shadow-xl">
+            <p className="text-orange-400 font-semibold mb-4 uppercase tracking-widest">
+              Visi
+            </p>
+
+            <h3 className="text-4xl font-black mb-6 leading-tight">
+              Menjadi ruang literasi dan pembelajaran yang inklusif.
+            </h3>
+
+            <p className="text-blue-100 text-lg leading-relaxed">
+              Inspiratif dan berdampak bagi masyarakat.
+            </p>
+          </div>
+
+          <div className="bg-slate-50 rounded-[32px] p-14 shadow-lg">
+            <p className="text-orange-500 font-semibold mb-4 uppercase tracking-widest">
+              Misi
+            </p>
+
+            <h3 className="text-4xl font-black text-blue-900 mb-8">
+              Membangun Masa Depan Melalui Literasi
+            </h3>
+
+            <ul className="space-y-5 text-lg text-slate-700">
+              <li>✓ Menumbuhkan budaya membaca</li>
+              <li>✓ Menjadi ruang belajar bersama</li>
+              <li>✓ Mengembangkan kreativitas anak muda</li>
+              <li>✓ Menghadirkan pendidikan yang dekat dengan masyarakat</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery */}
+      <section id="kegiatan" className="py-28 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex items-end justify-between mb-16">
+            <div>
+              <p className="text-orange-500 font-semibold uppercase tracking-widest mb-3">
+                Dokumentasi
+              </p>
+              <h3 className="text-5xl font-black text-blue-900">
+                Kegiatan Kami
+              </h3>
+            </div>
+
+            <button className="hidden md:block border-2 border-blue-700 text-blue-700 px-6 py-3 rounded-2xl font-semibold hover:bg-blue-700 hover:text-white transition">
+              Lihat Semua
+            </button>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {gallery.map((item, index) => (
+              <img
+                key={index}
+                src={item}
+                alt="Gallery"
+                className="rounded-[28px] h-80 object-cover w-full hover:scale-105 transition duration-300 shadow-lg"
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Donation */}
+      <section id="donasi" className="py-28 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="bg-gradient-to-r from-blue-800 to-blue-900 rounded-[40px] p-16 text-white relative overflow-hidden shadow-2xl">
+            <div className="absolute top-0 right-0 w-72 h-72 bg-orange-500 rounded-full blur-3xl opacity-20"></div>
+
+            <div className="relative z-10 grid lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <p className="text-orange-400 font-semibold uppercase tracking-widest mb-4">
+                  Donasi Buku
+                </p>
+
+                <h3 className="text-5xl font-black mb-6">
+                  Mari Berbagi Buku
+                </h3>
+
+                <p className="text-blue-100 text-lg leading-relaxed mb-10 max-w-xl">
+                  Kami membuka donasi buku untuk membantu memperluas
+                  akses literasi bagi masyarakat.
+                </p>
+
+                <div className="flex flex-wrap gap-4">
+                  <button className="bg-orange-500 hover:bg-orange-600 transition px-8 py-4 rounded-2xl font-semibold shadow-lg">
+                    Donasi Sekarang
+                  </button>
+
+                  <button className="border-2 border-white px-8 py-4 rounded-2xl font-semibold hover:bg-white hover:text-blue-900 transition">
+                    Hubungi Admin
+                  </button>
+                </div>
+              </div>
+
+              <img
+                src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1200&auto=format&fit=crop"
+                alt="Donation"
+                className="rounded-[32px] h-[420px] object-cover shadow-xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-28 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <p className="text-orange-500 font-semibold uppercase tracking-widest mb-4">
+            Apa Kata Mereka?
+          </p>
+
+          <h3 className="text-5xl font-black text-blue-900 mb-16">
+            Testimoni
+          </h3>
+
+          <div className="grid lg:grid-cols-3 gap-8">
+            {[1, 2, 3].map((item) => (
+              <div
+                key={item}
+                className="bg-white rounded-[32px] p-10 shadow-lg text-left hover:-translate-y-2 transition"
+              >
+                <div className="text-5xl text-orange-500 mb-6">“</div>
+
+                <p className="text-slate-600 text-lg leading-relaxed mb-8">
+                  Rumah Baca Matajang membuat saya kembali semangat
+                  membaca dan belajar.
+                </p>
+
+                <div>
+                  <h4 className="font-bold text-blue-900">
+                    A. Nurul
+                  </h4>
+                  <p className="text-slate-500">Mahasiswa</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-28 bg-blue-950 text-white text-center relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900 to-blue-950 opacity-90"></div>
+
+        <div className="relative z-10 max-w-4xl mx-auto px-6">
+          <p className="text-orange-400 font-semibold uppercase tracking-widest mb-4">
+            Bergabung Bersama Kami
+          </p>
+
+          <h3 className="text-5xl lg:text-6xl font-black mb-8 leading-tight">
+            Mari Bertumbuh Bersama
+          </h3>
+
+          <p className="text-blue-100 text-xl leading-relaxed mb-12">
+            Bergabunglah menjadi bagian dari gerakan literasi dan
+            pendidikan untuk masa depan yang lebih baik.
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-5">
+            <button className="bg-orange-500 hover:bg-orange-600 transition px-8 py-4 rounded-2xl font-semibold shadow-lg">
+              Gabung Komunitas
+            </button>
+
+            <button className="border-2 border-white px-8 py-4 rounded-2xl font-semibold hover:bg-white hover:text-blue-900 transition">
+              Follow Instagram
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-slate-950 text-slate-300 py-20">
+        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div>
+            <h3 className="text-3xl font-black text-white mb-4">
+              Rumah Baca Matajang
+            </h3>
+
+            <p className="leading-relaxed text-slate-400">
+              Ruang literasi, belajar, dan bertumbuh bersama untuk
+              masyarakat.
+            </p>
+          </div>
+
+          <div>
+            <h4 className="font-bold text-white mb-6">Navigasi</h4>
+            <ul className="space-y-4">
+              <li>Beranda</li>
+              <li>Tentang</li>
+              <li>Program</li>
+              <li>Kegiatan</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-bold text-white mb-6">Kontak</h4>
+            <ul className="space-y-4">
+              <li>Bone, Sulawesi Selatan</li>
+              <li>+62 812-3456-7890</li>
+              <li>rumahbacamatajang@gmail.com</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-bold text-white mb-6">Media Sosial</h4>
+            <div className="flex gap-4 text-3xl">
+              <span>📷</span>
+              <span>📘</span>
+              <span>▶️</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-slate-800 mt-16 pt-8 text-center text-slate-500">
+          © 2026 Rumah Baca Matajang. All rights reserved.
+        </div>
+      </footer>
+    </div>
+  );
+}

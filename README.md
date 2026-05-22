@@ -1,5 +1,9 @@
 ## Hi there 👋
 
+File `index.html` telah ditambahkan ke repo sebagai versi lengkap landing page Rumah Baca Matajang.
+
+Buka file `index.html` di browser untuk melihat website.
+
 <!--
 **rumahbacamatajang/RumahBacaMatajang** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
